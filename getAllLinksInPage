@@ -1,0 +1,11 @@
+var urls = [];
+for(var i = document.links.length; i --> 0;)
+if(document.links[i].hostname === location.hostname)
+{
+	if(document.links[i].href.includes("mp3"))
+	{
+		urls.push(document.links[i].href);
+		console.log(document.links[i].href);
+	}
+}
+		
